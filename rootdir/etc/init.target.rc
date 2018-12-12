@@ -28,7 +28,8 @@
 #
 
 on early-init
-    write /proc/sys/kernel/sched_boost 1
+    # Disable EAS
+    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
 
 on init
     # Boot time fs tuning

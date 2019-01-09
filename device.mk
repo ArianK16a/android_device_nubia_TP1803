@@ -136,6 +136,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc

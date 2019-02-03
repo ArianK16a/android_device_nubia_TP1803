@@ -80,7 +80,8 @@ TARGET_SCREEN_DENSITY := 480
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # Inherit from proprietary files
 include vendor/nubia/TP1803/BoardConfigVendor.mk

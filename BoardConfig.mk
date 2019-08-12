@@ -44,6 +44,12 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Display
+TARGET_USES_COLOR_METADATA := true
+TARGET_USES_DISPLAY_RENDER_INTENTS := true
+TARGET_USES_DRM_PP := true
+TARGET_USES_HWC2 := true
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -63,6 +69,9 @@ BOARD_KERNEL_CMDLINE := \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
     service_locator.enable=1
+
+# Media
+TARGET_USES_ION := true
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true

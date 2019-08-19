@@ -36,16 +36,12 @@ TARGET_KERNEL_SOURCE := kernel/nubia/sm8150
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
-    androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     console=ttyMSM0,115200n8 \
     earlycon=msm_geni_serial,0xa90000 \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
-    msm_rtb.filter=0x237 \
-    service_locator.enable=1 \
-    swiotlb=2048 \
-    video=vfb:640x400,bpp=32,memsize=3072000
+    service_locator.enable=1
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile

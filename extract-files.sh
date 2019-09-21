@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/bin/dspservice | vendor/bin/vppservice | vendor/lib64/lib-imsrcs-v2.so | vendor/lib/libOmxVpp.so | vendor/lib/libvppclient.so)
             "${PATCHELF}" --remove-needed "libhwbinder.so" "${2}"
             ;;
+        vendor/lib64/hw/camera.qcom.so)
+            sed -i "s|libc++.so|libc28.so|g" "${2}"
+            ;;
     esac
 }
 

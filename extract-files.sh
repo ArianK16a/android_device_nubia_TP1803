@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib64/hw/camera.qcom.so)
+            sed -i "s|libc++.so|libc28.so|g" "${2}"
+            ;;
     esac
 }
 

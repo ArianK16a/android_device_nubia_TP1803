@@ -145,5 +145,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    libwifi-hal-qcom \
+    libwpa_client \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 # Call the proprietary setup
 $(call inherit-product, vendor/nubia/TP1803/TP1803-vendor.mk)

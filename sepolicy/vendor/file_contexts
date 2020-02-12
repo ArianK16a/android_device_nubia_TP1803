@@ -1,3 +1,6 @@
+# Data files
+/data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0
+
 # Fingerprint
 /dev/sunwave_fp                                                      u:object_r:vendor_fingerprint_device:s0
 

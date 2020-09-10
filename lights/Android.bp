@@ -1,0 +1,19 @@
+cc_binary {
+    name: "android.hardware.light@2.0-service.TP1803",
+    defaults: ["hidl_defaults"],
+    init_rc: ["android.hardware.light@2.0-service.TP1803.rc"],
+    vintf_fragments: ["android.hardware.light@2.0-service.TP1803.xml"],
+    relative_install_path: "hw",
+    vendor: true,
+    srcs: [
+        "Light.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libhardware",
+        "libhidlbase",
+        "libutils",
+        "android.hardware.light@2.0",
+    ],
+}

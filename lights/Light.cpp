@@ -84,8 +84,8 @@ void Light::handleRgb(const LightState& state, size_t index) {
     }
 
     std::map<std::string, int> colorValues;
-    colorValues["red"] = stateToUse.color & 0xff;
-    colorValues["green"] = stateToUse.color & 0xff;
+    colorValues["red"] = (stateToUse.color >> 16) & 0xff;
+    colorValues["green"] = (stateToUse.color >> 8) & 0xff;
 
     auto makeLedPath = [](const std::string& led, const std::string& op) -> std::string {
         return "/sys/class/leds/" + led + "/" + op;

@@ -2179,7 +2179,7 @@
         <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
         <ctl name="CDC_IF RX0 MUX" value="SLIM RX0" />
         <ctl name="CDC_IF RX1 MUX" value="SLIM RX1" />
-        <ctl name="SLIM_0_RX Channels" value="Two" />
+        <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT3_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT4_1 MIX1 INP0" value="RX1" />
         <ctl name="COMP3 Switch" value="1" />

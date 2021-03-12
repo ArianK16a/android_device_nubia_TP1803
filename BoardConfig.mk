@@ -5,3 +5,6 @@
 #
 
 DEVICE_PATH := device/nubia/TP1803
+
+# Inherit from proprietary files
+include vendor/nubia/TP1803/BoardConfigVendor.mk

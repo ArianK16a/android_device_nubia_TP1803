@@ -10,3 +10,6 @@
 # Sensors
 /sys/devices/virtual/light/light(/.*)?                               u:object_r:vendor_sysfs_sensors:s0
 /sys/devices/virtual/proximity/proximity(/.*)?                       u:object_r:vendor_sysfs_sensors:s0
+
+# UFS
+/sys/devices(/platform)?/soc/[a-f0-9]+.ufshc/clkgate_enable          u:object_r:vendor_sysfs_scsi_host:s0

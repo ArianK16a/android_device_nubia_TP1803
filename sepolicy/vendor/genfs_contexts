@@ -1,0 +1,7 @@
+# Display
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask         u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state                u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms           u:object_r:vendor_sysfs_graphics:s0
+
+# Power
+genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0

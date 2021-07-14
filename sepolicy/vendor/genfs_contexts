@@ -14,6 +14,8 @@ genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/wakeup             
 genfscon sysfs /devices/platform/soc/soc:abc-sm/wakeup                                                                                                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a600000.ssusb/wakeup                                                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup                                                                                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd/wakeup                                                                                                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd-secure/wakeup                                                                                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_aac/wakeup                                                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_alac/wakeup                                                                                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_amrnb/wakeup                                                                                                                           u:object_r:sysfs_wakeup:s0

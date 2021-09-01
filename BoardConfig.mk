@@ -6,5 +6,8 @@
 
 DEVICE_PATH := device/nubia/TP1803
 
+# Screen density
+TARGET_SCREEN_DENSITY := 480
+
 # Inherit from proprietary files
 include vendor/nubia/TP1803/BoardConfigVendor.mk

@@ -81,6 +81,8 @@ BOARD_KERNEL_CMDLINE := \
     lpm_levels.sleep_disabled=1 \
     service_locator.enable=1
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Media
 TARGET_USES_ION := true
 

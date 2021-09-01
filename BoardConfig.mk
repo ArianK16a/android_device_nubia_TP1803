@@ -70,6 +70,9 @@ TARGET_BOARD_PLATFORM := msmnile
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Screen density
 TARGET_SCREEN_DENSITY := 480
 

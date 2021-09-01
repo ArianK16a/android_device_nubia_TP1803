@@ -106,6 +106,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# IRSC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
 # Media
 PRODUCT_PACKAGES += \
     libOmxAacEnc \

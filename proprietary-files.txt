@@ -1,3 +1,37 @@
+# ADSP
+vendor/bin/adsprpcd
+vendor/bin/cdsprpcd
+vendor/etc/init/vendor.qti.adsprpc-service.rc
+vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
+vendor/lib/libcdsp_default_listener.so
+
+# ADSP modules
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libcamera_nn_skel.so
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
+vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
+vendor/lib/rfsa/adsp/libVC1Dec.so
+
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
@@ -5,6 +39,34 @@ vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+
+# Audio ACDB
+vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Codec_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/workspaceFile.qwsp
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libaudcal.so
+
+# Audio FX modules
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libshoebox.so
+
+# Audio libraries
+vendor/lib/btaudio_offload_if.so
+vendor/lib/libadm.so
+vendor/lib/libqtigef.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -147,6 +209,12 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+
+# Listen
+vendor/lib/hw/sound_trigger.primary.msmnile.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/libsmwrapper.so
 
 # Peripheral Manager
 vendor/bin/pm-proxy

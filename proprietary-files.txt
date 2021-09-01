@@ -86,6 +86,12 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 
+# Certificate Authority
+-vendor/app/CACertService/CACertService.apk
+vendor/lib64/libcacertclient.so
+vendor/lib64/libjnihelper.so
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so
+
 # CNE
 -vendor/app/CneApp/CneApp.apk
 -vendor/app/IWlanService/IWlanService.apk

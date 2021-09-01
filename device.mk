@@ -234,6 +234,25 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     librmnetctl
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.factory.rc \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sdio.sh \
+    init.qcom.sh \
+    init.qcom.ssr.sh \
+    init.recovery.qcom.rc \
+    qca6234-service.sh \
+    ueventd.qcom.rc
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \

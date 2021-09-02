@@ -55,7 +55,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libOmxVpp.so | vendor/lib/libvppclient.so)
+        vendor/bin/vppservice | vendor/lib/libOmxVpp.so | vendor/lib/libvppclient.so)
             "${PATCHELF}" --remove-needed "libhwbinder.so" "${2}"
             ;;
     esac

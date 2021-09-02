@@ -218,6 +218,9 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
+# Fingerprint - from TP1803 PKQ1.190504.001
+vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.msmnile.so|dd121120c89cc084c4d31c5ee3ad4d8b69714e85
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc

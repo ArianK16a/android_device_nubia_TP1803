@@ -142,6 +142,7 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \

@@ -137,6 +137,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor

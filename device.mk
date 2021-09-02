@@ -189,6 +189,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
+# RIL
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \

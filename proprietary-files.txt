@@ -216,6 +216,7 @@ vendor/lib64/camera/fdconfigvideolite.bin|e81c3e77382551ab8f7a3a44a594009976de10
 vendor/lib64/hw/camera.qcom.so|7cab2820c14e5f1d7441252dbe4211e9187b08bc
 vendor/lib64/hw/com.qti.chi.override.so|a72f69e00b3c82244a0d4b67b61488294dff2731
 vendor/lib64/libcamera_nn_stub.so|aa79c973ec2a257c621c28beae181eadfdb086e3
+vendor/lib64/libcamxfdalgov7.so|2c494f89ba9117f60b211ed83e09de21df976977
 vendor/lib64/libcamxfdalgov8.so|f5c42e019942199820fe28b5e53c4e7af5b214c5
 vendor/lib64/libcamxfdengine.so|93ded297b3d2abc0c0534fd2d071db707d510c38
 vendor/lib64/libcamxstatscore.so|3f6a0e408b33b71f3d462cef3e479edbe7dbe576

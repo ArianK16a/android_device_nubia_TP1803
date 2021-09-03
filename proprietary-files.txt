@@ -356,7 +356,7 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# Fingerprint - from BSP
+# Fingerprint - from stock
 vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.msmnile.so|dd121120c89cc084c4d31c5ee3ad4d8b69714e85
 
 # Gatekeeper

@@ -603,18 +603,18 @@ vendor/lib64/libssc.so
 vendor/lib64/sensors.oem.so
 vendor/lib64/sensors.ssc.so
 
-# Sensor config - from stock
+# Sensors config - from stock
 vendor/etc/sensors/config/ak991x_dri_0.json|f14159a6b36ad55e98636073277a7c5f6faff024
 vendor/etc/sensors/config/default_sensors.json|a3b96b5be301d090301bc3b81348d7b73fc1e488
 vendor/etc/sensors/config/lsm6ds3_0.json|4e039e50d892680e3c24c2109833e8a013f1b678
-vendor/etc/sensors/config/lsm6ds3c_0.json|accc2387201703f72ea2a63aeeeb62e47ba76793
 vendor/etc/sensors/config/lsm6ds3c_0_8g.json|f59a493d40e6331b0872da9e96f0720b5911309e
-vendor/etc/sensors/config/lsm6dsm_0.json|ae8d24f00f7eac91f9bf9af24cba56d48e9abc12
+vendor/etc/sensors/config/lsm6ds3c_0.json|accc2387201703f72ea2a63aeeeb62e47ba76793
 vendor/etc/sensors/config/lsm6dsm_0_16g.json|1c1fa6a9ce680371c74361aee94f178b08328fb7
 vendor/etc/sensors/config/lsm6dsm_0_8g.json|087ca760ea8056635ade48246acc42b3755a9b12
-vendor/etc/sensors/config/lsm6dso_0.json|a30a6e299e30fdc2ab50803fd87b283aeb10526c
+vendor/etc/sensors/config/lsm6dsm_0.json|ae8d24f00f7eac91f9bf9af24cba56d48e9abc12
 vendor/etc/sensors/config/lsm6dso_0_16g.json|520fafc57361cc1f2a2d0c81ec92f79007692bfc
 vendor/etc/sensors/config/lsm6dso_0_8g.json|8fad39c8bfa206fc94abf5eedecb8b88d2a7d707
+vendor/etc/sensors/config/lsm6dso_0.json|a30a6e299e30fdc2ab50803fd87b283aeb10526c
 vendor/etc/sensors/config/msmnile_ak991x_0.json|f742b15c9225bf4de0f18c7d1cf90716e13cc524
 vendor/etc/sensors/config/msmnile_hdk_ak991x_0.json|e628d8ed48c8f46ca48150e20712760947f717b5
 vendor/etc/sensors/config/msmnile_hdk_lsm6dso_0.json|5078d0da3cbb1683930aa301fb8dc0ad12ce8eb7

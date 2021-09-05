@@ -1,8 +1,6 @@
 # combined from stock
 
 on post-fs-data
-    chmod 0777 /persist/sensors
-
     # sensors' input devices
     chmod 0666 /dev/input/event4
     chown system system /dev/input/event4
@@ -23,12 +21,6 @@ on post-fs-data
     chmod 0664 /sys/class/proximity/proximity/prox_init
     chmod 0664 /sys/class/proximity/proximity/chip_name
     chmod 0666 /sys/class/proximity/proximity/proximity_fb
-
-    chown system system /persist/sensors/als_cal_data
-    chmod 0664 /persist/sensors/als_cal_data
-
-    chown system system /persist/sensors/xtalk_cal
-    chmod 0664 /persist/sensors/xtalk_cal
 
     # light
     chown system system /sys/class/light/light/enable
@@ -66,12 +58,10 @@ on post-fs-data
     chmod 0664 /persist/sensors/rgb_color_cfg
     chown system system /persist/sensors/rgbc_cfg
     chmod 0664 /persist/sensors/rgbc_cfg
-    
+
     # fingerprint (sunwave)
     chown system system /dev/sunwave_fp
     chmod 0664 /dev/sunwave_fp
-
-    setprop ro.hardware.fingerprint sunwave
 
     # leds
     chown system system /sys/class/leds/green/breath

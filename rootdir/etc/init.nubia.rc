@@ -59,10 +59,6 @@ on post-fs-data
     chown system system /persist/sensors/rgbc_cfg
     chmod 0664 /persist/sensors/rgbc_cfg
 
-    # fingerprint (sunwave)
-    chown system system /dev/sunwave_fp
-    chmod 0664 /dev/sunwave_fp
-
     # leds
     chown system system /sys/class/leds/green/breath
     chown system system /sys/class/leds/green/brightness

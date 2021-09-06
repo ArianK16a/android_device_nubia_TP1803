@@ -174,7 +174,6 @@ PRODUCT_PACKAGES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    init.nubia.rc \
     init.target.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

@@ -1,8 +1,0 @@
-# combined from stock
-
-on post-fs-data
-    # sensors' input devices
-    chmod 0666 /dev/input/event4
-    chown system system /dev/input/event4
-    chmod 0666 /dev/input/event5
-    chown system system /dev/input/event5

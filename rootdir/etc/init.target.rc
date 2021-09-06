@@ -27,8 +27,6 @@
 #
 #
 
-import /vendor/etc/init/hw/init.nubia.rc
-
 on early-init
     write /proc/sys/kernel/sched_boost 1
 
@@ -130,3 +128,12 @@ service vendor.lowi /vendor/bin/sscrpcd
    user system
    group system wakelock
    capabilities BLOCK_SUSPEND
+
+service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
+    override
+    class hal
+    user system
+    group system wakelock context_hub input
+    writepid /dev/cpuset/system-background/tasks
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10

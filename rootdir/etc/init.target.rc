@@ -75,14 +75,6 @@ on boot
     start rmt_storage
     start rfs_access
 
-    # USB controller configuration
-    setprop vendor.usb.rndis.func.name "gsi"
-    setprop vendor.usb.rmnet.func.name "gsi"
-    setprop vendor.usb.rmnet.inst.name "rmnet"
-    setprop vendor.usb.dpl.inst.name "dpl"
-    setprop vendor.usb.qdss.inst.name "qdss"
-    setprop vendor.usb.controller a600000.dwc3
-
 on property:sys.boot_completed=1
     # For cpusets initialize for Silver Only first and then Silver + Gold
     # Silver Only configuration cannot work with 0-7
@@ -123,8 +115,6 @@ on property:sys.shutdown.requested=*
 
 on charger
     start vendor.power_off_alarm
-    setprop sys.usb.controller a600000.dwc3
-    setprop sys.usb.configfs 1
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
    class main

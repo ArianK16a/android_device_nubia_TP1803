@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
+# Fstab
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
@@ -169,11 +173,13 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # Init scripts
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/etc/,$(TARGET_COPY_OUT_VENDOR)/etc/init/hw) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/bin/,$(TARGET_COPY_OUT_VENDOR)/bin) \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
-    $(LOCAL_PATH)/rootdir/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+PRODUCT_PACKAGES += \
+    init.nubia.rc \
+    init.target.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.qcom.post_boot.sh \
+    init.qcom.sh
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -283,6 +289,10 @@ PRODUCT_COPY_FILES += \
 # Touchscreen
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+
+# Uevent
+PRODUCT_PACKAGES += \
+    ueventd.qcom.rc
 
 # USB
 PRODUCT_PACKAGES += \

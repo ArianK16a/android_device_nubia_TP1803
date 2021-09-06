@@ -1,0 +1,8 @@
+type vendor_fingerprint_device, dev_type;
+
+allow hal_fingerprint_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default vendor_fingerprint_device:chr_file rw_file_perms;
+
+allowxperm hal_fingerprint_default tee_device:chr_file ioctl { 0x9703 0x9707 0x9708 0x9709 0x970a 0x970f };
+allowxperm hal_fingerprint_default vendor_fingerprint_device:chr_file ioctl { 0x7302 0x7320 0x7330 };

@@ -285,6 +285,17 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 # Fingerprint - from stock
 vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.msmnile.so|dd121120c89cc084c4d31c5ee3ad4d8b69714e85
 
+# Fingerprint firmware - from stock
+image/sw_fp.b00:vendor/firmware/sw_fp.b00|6dba7688decc296f3339400515cfdf66abf43daf
+image/sw_fp.b01:vendor/firmware/sw_fp.b01|90a3b1b5169f442df248b22ffc15c4652c275841
+image/sw_fp.b02:vendor/firmware/sw_fp.b02|ed8375c07e2a50f13332a4ae2a7f07414d03f58d
+image/sw_fp.b03:vendor/firmware/sw_fp.b03|720c6b34a173acba52185de287d85ee2d1450837
+image/sw_fp.b04:vendor/firmware/sw_fp.b04|fce272c82cf465defb6c39dd68bda7117d360445
+image/sw_fp.b05:vendor/firmware/sw_fp.b05|49306bee87f2b86cfa6bf2ed02018ead1f31761e
+image/sw_fp.b06:vendor/firmware/sw_fp.b06|3d8e98e3224cec00dffff9d800b90d0e71e4be2e
+image/sw_fp.b07:vendor/firmware/sw_fp.b07|29d2a43cae6ba125852ff8048d5da2646996c0be
+image/sw_fp.mdt:vendor/firmware/sw_fp.mdt|36678734f1666af29af30b59d20041d38b717311
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc

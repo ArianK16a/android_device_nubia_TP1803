@@ -87,18 +87,6 @@ vendor/lib/libbluetooth_audio_session_qti.so
 
 # Camera - from stock
 vendor/etc/camera/camxoverridesettings.txt|867b717c63b0e588b54ead90381d9660c4ff22cc
-vendor/etc/camera/icon/changes_small.png|99e973ae1d5940d86453ceabad956915531ccee9
-vendor/etc/camera/icon/noise.png|8b14f702393e8cd66927cd6433ff1ac83ededfd6
-vendor/etc/camera/icon/oldfilmdust.png|fd5982b200cfccfa699f792c0460e04f47c61b22
-vendor/etc/camera/icon/oldfilmscratches.png|38c473887b80ed16e9e7a5fe0e38d7553ed218e2
-vendor/etc/camera/icon/red2green.png|9a2ab05409c84e5b739e50053996365086f0318e
-vendor/etc/camera/icon/red2green_r.png|916644d0455eea6ca6c240b7ead3a22e69eadd50
-vendor/etc/camera/icon/sucai0.png|01b9a2417d67565e2b6246b89c00e6b3a3e6f3c5
-vendor/etc/camera/icon/sucai0_r.png|0091322f8676ff8e6a57d6b666c12aefbadd83fe
-vendor/etc/camera/icon/sucai3.png|6471b6f624738c1c7801cfd96e2f1a3e32eceed2
-vendor/etc/camera/icon/vignette.png|f7fd3875126efa7a3ace6a48a03690c13fd1d00d
-vendor/etc/camera/icon/water_mark_drawable_black.argb|a8c842782076ade3f1093f4c9f28c0a1f62a4321
-vendor/etc/camera/icon/water_mark_drawable_white.argb|529d02879cff16741859af127f8be29dc54f3e71
 vendor/firmware/CAMERA_ICP.elf|0d67a7e94d70054077386bf9714af2e969706905
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so|d8de6abf30be0ea7c551fe2c4109c1ee0adfe929
 vendor/lib64/camera/components/com.qti.eisv2.so|895242b879facb428cd7f59cbe3de2b62fdcdeff

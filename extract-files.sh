@@ -61,6 +61,7 @@ function blob_fixup() {
         vendor/lib64/hw/camera.qcom.so)
             sed -i "s|libc++.so|libc28.so|g" "${2}"
             sed -i "s|libqdMetaData.so|libcomparetf2.so|" "${2}"
+            sed -i 's|libsnsapi.so|libsnsv28.so|g' "${2}"
             ;;
     esac
 }

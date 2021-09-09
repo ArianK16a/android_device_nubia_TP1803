@@ -145,7 +145,7 @@ vendor/lib64/camera/fdconfigpreview.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/camera/fdconfigpreviewlite.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/camera/fdconfigvideo.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/camera/fdconfigvideolite.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
-vendor/lib64/hw/camera.qcom.so|88d557c1ae66ecbc224c5bd2a9aee0544a177010|17be337d809605905819e9a65e73fa937238285a
+vendor/lib64/hw/camera.qcom.so|88d557c1ae66ecbc224c5bd2a9aee0544a177010|8a099105c042f9261bd0f525f89a9b6dbdd24252
 vendor/lib64/hw/com.qti.chi.override.so|2918319b14552887dddee75765694ea804aad230
 vendor/lib64/libcamera_nn_stub.so|ba354b7e968ce2af3ac5597292d1b315d89b4113
 vendor/lib64/libcamxfdalgov7.so|aa3cf08b7c8fa862417d332c2b8012218188b962
@@ -155,6 +155,7 @@ vendor/lib64/libcamxstatscore.so|8be078e11b86df6f204ab899867b042e7529c39c
 vendor/lib64/libcamxswprocessalgo.so|6457563020d15ab00a563c1fb2453482bc396b3a
 vendor/lib64/libcamxtintlessalgo.so|cbaad8d52f77f0af0e8122296336fcbef3014856
 vendor/lib64/libcom.qti.chinodeutils.so|1d694e69edee256715d96b4d0aa3d883ee4cf7b4
+vendor/lib64/libsnsapi.so:vendor/lib64/libsnsv28.so|89da0e4714611fad86c51c6053c2e73d9ce4f3e1
 
 # Charger
 vendor/bin/hvdcp_opti

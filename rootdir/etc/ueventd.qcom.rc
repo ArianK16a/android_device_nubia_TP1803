@@ -161,27 +161,27 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/sunwave_fp          0660   system     system
 
 # Light
-/sys/class/proximity/light/light            enable                   0660    system    system
-/sys/class/proximity/light/light            tp_cfg                   0660    system    system
-/sys/class/proximity/light/light            fac_calibrate            0660    system    system
-/sys/class/proximity/light/light            calibrate                0660    system    system
-/sys/class/proximity/light/light            chip_name                0660    system    system
-/sys/class/proximity/light/light            light_value              0660    system    system
-/sys/class/proximity/light/light            delay                    0660    system    system
-/sys/class/proximity/light/light            red_data                 0660    system    system
-/sys/class/proximity/light/light            green_data               0660    system    system
-/sys/class/proximity/light/light            blue_data                0660    system    system
-/sys/class/proximity/light/light            clear_data               0660    system    system
-/sys/class/proximity/light/light            dump_reg                 0660    system    system
-/sys/class/proximity/light/light            module_tpcolor           0660    system    system
-/sys/class/proximity/light/light            dump_tp_parameter        0660    system    system
-/sys/class/proximity/light/light            dev_init                 0660    system    system
+/sys/class/light/light            enable                   0660    system    system
+/sys/class/light/light            tp_cfg                   0660    system    system
+/sys/class/light/light            fac_calibrate            0660    system    system
+/sys/class/light/light            calibrate                0660    system    system
+/sys/class/light/light            chip_name                0660    system    system
+/sys/class/light/light            light_value              0660    system    system
+/sys/class/light/light            delay                    0660    system    system
+/sys/class/light/light            red_data                 0660    system    system
+/sys/class/light/light            green_data               0660    system    system
+/sys/class/light/light            blue_data                0660    system    system
+/sys/class/light/light            clear_data               0660    system    system
+/sys/class/light/light            dump_reg                 0660    system    system
+/sys/class/light/light            module_tpcolor           0660    system    system
+/sys/class/light/light            dump_tp_parameter        0660    system    system
+/sys/class/light/light            dev_init                 0660    system    system
 
 # Proximity
-/sys/class/proximity/proximity/proximity    enable                   0660    system    system
-/sys/class/proximity/proximity/proximity    prox_value               0660    system    system
-/sys/class/proximity/proximity/proximity    prox_init                0660    system    system
-/sys/class/proximity/proximity/proximity    chip_name                0660    system    system
-/sys/class/proximity/proximity/proximity    proximity_fb             0660    system    system
-/sys/class/proximity/proximity/proximity    prox_thres_check         0660    system    system
-/sys/class/proximity/proximity/proximity    prox_thres_to_persist    0660    system    system
+/sys/class/proximity/proximity    enable                   0660    system    system
+/sys/class/proximity/proximity    prox_value               0660    system    system
+/sys/class/proximity/proximity    prox_init                0660    system    system
+/sys/class/proximity/proximity    chip_name                0660    system    system
+/sys/class/proximity/proximity    proximity_fb             0660    system    system
+/sys/class/proximity/proximity    prox_thres_check         0660    system    system
+/sys/class/proximity/proximity    prox_thres_to_persist    0660    system    system

@@ -33,6 +33,7 @@ def OTA_InstallEnd(info):
     AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
     AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
 
+    AddImageRadio(info, "abl.elf", "/dev/block/bootdevice/by-name/abl")
     AddImageRadio(info, "aop.mbn", "/dev/block/bootdevice/by-name/aop")
     AddImageRadio(info, "BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth")
     AddImageRadio(info, "cmnlib.mbn", "/dev/block/bootdevice/by-name/cmnlib")
@@ -46,8 +47,11 @@ def OTA_InstallEnd(info):
     AddImageRadio(info, "NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem")
     AddImageRadio(info, "parameter.img", "/dev/block/bootdevice/by-name/parameter")
     AddImageRadio(info, "qupv3fw.elf", "/dev/block/bootdevice/by-name/qupfw")
+    AddImageRadio(info, "splash.bin", "/dev/block/bootdevice/by-name/splash")
     AddImageRadio(info, "storsec.mbn", "/dev/block/bootdevice/by-name/storsec")
     AddImageRadio(info, "tz.mbn", "/dev/block/bootdevice/by-name/tz")
     AddImageRadio(info, "uefi_sec.mbn", "/dev/block/bootdevice/by-name/uefisecapp")
+    AddImageRadio(info, "xbl.bin", "/dev/block/bootdevice/by-name/xbl")
+    AddImageRadio(info, "xbl_config.bin", "/dev/block/bootdevice/by-name/xbl_config")
 
     return

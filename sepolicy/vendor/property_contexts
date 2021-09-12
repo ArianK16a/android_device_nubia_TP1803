@@ -1,0 +1,2 @@
+# Nubia
+persist.sys.nblog.qmimsg.enable    u:object_r:exported_system_prop:s0 exact string

@@ -144,6 +144,7 @@ vendor/lib64/libcamxswprocessalgo.so|6457563020d15ab00a563c1fb2453482bc396b3a
 vendor/lib64/libcamxtintlessalgo.so|cbaad8d52f77f0af0e8122296336fcbef3014856
 vendor/lib64/libcom.qti.chinodeutils.so|1d694e69edee256715d96b4d0aa3d883ee4cf7b4
 vendor/lib64/libsnsapi.so:vendor/lib64/libsnsv28.so|89da0e4714611fad86c51c6053c2e73d9ce4f3e1
+vendor/lib64/libswregistrationalgo.so|555762868791b8c731170578fef02468ac709805
 
 # Charger
 vendor/bin/hvdcp_opti

@@ -180,7 +180,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
-    init.qcom.post_boot.sh \
     init.qcom.sh
 
 # IRSC

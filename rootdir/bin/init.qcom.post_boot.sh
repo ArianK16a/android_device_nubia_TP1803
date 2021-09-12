@@ -50,15 +50,6 @@ function enable_memory_features()
     fi
 }
 
-function start_hbtp()
-{
-        # Start the Host based Touch processing but not in the power off mode.
-        bootmode=`getprop ro.bootmode`
-        if [ "charger" != $bootmode ]; then
-                start vendor.hbtp
-        fi
-}
-
 case "$target" in
     "msmnile")
 	# Core control parameters for gold
@@ -197,32 +188,6 @@ case "$target" in
     # memlat specific settings are moved to seperate file under
     # device/target specific folder
     setprop vendor.dcvs.prop 1
-
-    if [ -f /sys/devices/soc0/hw_platform ]; then
-        hw_platform=`cat /sys/devices/soc0/hw_platform`
-    else
-        hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
-    fi
-
-    if [ -f /sys/devices/soc0/platform_subtype_id ]; then
-        platform_subtype_id=`cat /sys/devices/soc0/platform_subtype_id`
-    fi
-
-    case "$hw_platform" in
-        "MTP" | "Surf" | "RCM" )
-            # Start Host based Touch processing
-            case "$platform_subtype_id" in
-                "0" | "1" | "2" | "3" | "4")
-                    start_hbtp
-                    ;;
-            esac
-        ;;
-        "HDK" )
-            if [ -d /sys/kernel/hbtpsensor ] ; then
-                start_hbtp
-            fi
-        ;;
-    esac
 
     echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
 esac

@@ -29,27 +29,6 @@
 
 target=`getprop ro.board.platform`
 
-KernelVersionStr=`cat /proc/sys/kernel/osrelease`
-KernelVersionS=${KernelVersionStr:2:2}
-KernelVersionA=${KernelVersionStr:0:1}
-KernelVersionB=${KernelVersionS%.*}
-
-function enable_memory_features()
-{
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    if [ $MemTotal -le 2097152 ]; then
-        #Enable B service adj transition for 2GB or less memory
-        setprop ro.vendor.qti.sys.fw.bservice_enable true
-        setprop ro.vendor.qti.sys.fw.bservice_limit 5
-        setprop ro.vendor.qti.sys.fw.bservice_age 5000
-
-        #Enable Delay Service Restart
-        setprop ro.vendor.qti.am.reschedule_service true
-    fi
-}
-
 case "$target" in
     "msmnile")
 	# Core control parameters for gold

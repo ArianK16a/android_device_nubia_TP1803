@@ -176,6 +176,7 @@ PRODUCT_PACKAGES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
+    init.power.rc \
     init.target.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

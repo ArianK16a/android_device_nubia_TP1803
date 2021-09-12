@@ -29,3 +29,5 @@ genfscon sysfs /devices/virtual/misc/msm_wma/wakeup                             
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/wakeup                                                                                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup                                                                                                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/diag/diag/wakeup                                                                                                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/171c0000.slim/tavil-slim-pgd/wakeup                                                                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/wakeup                                                                                                               u:object_r:sysfs_wakeup:s0

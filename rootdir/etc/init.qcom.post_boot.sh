@@ -29,11 +29,6 @@
 
 target=`getprop ro.board.platform`
 
-KernelVersionStr=`cat /proc/sys/kernel/osrelease`
-KernelVersionS=${KernelVersionStr:2:2}
-KernelVersionA=${KernelVersionStr:0:1}
-KernelVersionB=${KernelVersionS%.*}
-
 case "$target" in
     "msmnile")
 	# Core control parameters for gold
@@ -115,14 +110,6 @@ case "$target" in
 	else
 		echo 1 > /proc/sys/vm/reap_mem_on_sigkill
 	fi
-
-    target_type=`getprop ro.hardware.type`
-	if [ -f /sys/devices/soc0/soc_id ]; then
-                soc_id=`cat /sys/devices/soc0/soc_id`
-            else
-                soc_id=`cat /sys/devices/system/soc/soc0/id`
-            fi
-    ;;
 esac
 
 chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate

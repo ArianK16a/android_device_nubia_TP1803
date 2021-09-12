@@ -569,6 +569,42 @@ vendor/etc/sensors/config/sns_wrist_pedo.json|078bbc91b4bde41ad214ee81276485e657
 vendor/etc/sensors/hals.conf|a96389b6739f730ab852414c009570e54c9ae52c
 vendor/etc/sensors/sns_reg_config|891e6e552b64c29b61744dd53ea373ea0ce0aa40
 
+# Thermal
+vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-mode-00-01.conf
+vendor/etc/thermal-mode-00-02.conf
+vendor/etc/thermal-mode-00-03.conf
+vendor/etc/thermal-mode-00-04.conf
+vendor/etc/thermal-mode-00-05.conf
+vendor/etc/thermal-mode-00-06.conf
+vendor/etc/thermal-mode-01-01.conf
+vendor/etc/thermal-mode-01-02.conf
+vendor/etc/thermal-mode-01-03.conf
+vendor/etc/thermal-mode-01-04.conf
+vendor/etc/thermal-mode-01-05.conf
+vendor/etc/thermal-mode-01-06.conf
+vendor/etc/thermal-mode-02-01.conf
+vendor/etc/thermal-mode-02-02.conf
+vendor/etc/thermal-mode-02-03.conf
+vendor/etc/thermal-mode-02-04.conf
+vendor/etc/thermal-mode-02-05.conf
+vendor/etc/thermal-mode-02-06.conf
+vendor/etc/thermal-mode-03-01.conf
+vendor/etc/thermal-mode-03-02.conf
+vendor/etc/thermal-mode-03-03.conf
+vendor/etc/thermal-mode-03-04.conf
+vendor/etc/thermal-mode-03-05.conf
+vendor/etc/thermal-mode-03-06.conf
+vendor/etc/thermal-mode-04-01.conf
+vendor/etc/thermal-mode-04-02.conf
+vendor/etc/thermal-mode-04-03.conf
+vendor/etc/thermal-mode-04-04.conf
+vendor/etc/thermal-mode-04-05.conf
+vendor/etc/thermal-mode-04-06.conf
+vendor/lib64/libthermalclient.so
+
 # Time
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon

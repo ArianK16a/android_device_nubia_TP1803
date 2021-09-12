@@ -1,9 +1,5 @@
 # Wakeup stats (new)
 # https://lkml.org/lkml/2019/8/6/1275
-genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0036/power_supply/maxfg/wakeup                                                                                          u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless/wakeup                                                                                       u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:abc-sm/wakeup                                                                                                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a600000.ssusb/wakeup                                                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup                                                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd/wakeup                                                                                                                      u:object_r:sysfs_wakeup:s0
@@ -24,10 +20,4 @@ genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup                           
 genfscon sysfs /devices/virtual/misc/msm_wma/wakeup                                                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/wakeup                                                                                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup                                                                                                                          u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/abc-pcie-ipu/paintbox-ipu/wakeup                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/diag/diag/wakeup                                                                                                                                u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-2/2-0008/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/89c000.i2c/i2c-2/2-0036/power_supply/maxfg/wakeup                                                                                        u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-4/4-0043/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-3/3-0008/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0

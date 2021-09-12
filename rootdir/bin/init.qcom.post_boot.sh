@@ -111,6 +111,3 @@ case "$target" in
 		echo 1 > /proc/sys/vm/reap_mem_on_sigkill
 	fi
 esac
-
-# Post-setup services
-setprop vendor.post_boot.parsed 1

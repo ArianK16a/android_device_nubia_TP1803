@@ -246,11 +246,11 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.power.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
-    init.qti.dcvs.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc

@@ -183,16 +183,6 @@ service vendor.mdm_helper /vendor/bin/mdm_helper
     class core
     group system wakelock
 
-service dcvs-sh /vendor/bin/init.qti.dcvs.sh
-    class late_start
-    user root
-    group root system
-    disabled
-    oneshot
-
-on property:vendor.dcvs.prop=1
-   start dcvs-sh
-
 service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
     override
     class hal

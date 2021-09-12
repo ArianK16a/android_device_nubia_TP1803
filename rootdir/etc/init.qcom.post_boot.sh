@@ -116,64 +116,6 @@ case "$target" in
 		echo 1 > /proc/sys/vm/reap_mem_on_sigkill
 	fi
 
-	# Enable bus-dcvs
-	for device in /sys/devices/platform/soc
-	do
-	    for cpubw in $device/*cpu-cpu-llcc-bw/devfreq/*cpu-cpu-llcc-bw
-	    do
-		echo "bw_hwmon" > $cpubw/governor
-		echo "2288 4577 7110 9155 12298 14236 15258" > $cpubw/bw_hwmon/mbps_zones
-		echo 4 > $cpubw/bw_hwmon/sample_ms
-		echo 50 > $cpubw/bw_hwmon/io_percent
-		echo 20 > $cpubw/bw_hwmon/hist_memory
-		echo 10 > $cpubw/bw_hwmon/hyst_length
-		echo 30 > $cpubw/bw_hwmon/down_thres
-		echo 0 > $cpubw/bw_hwmon/guard_band_mbps
-		echo 250 > $cpubw/bw_hwmon/up_scale
-		echo 1600 > $cpubw/bw_hwmon/idle_mbps
-		echo 14236 > $cpubw/max_freq
-                echo 40 > $cpubw/polling_interval
-	    done
-
-	    for llccbw in $device/*cpu-llcc-ddr-bw/devfreq/*cpu-llcc-ddr-bw
-	    do
-		echo "bw_hwmon" > $llccbw/governor
-		echo "1720 2929 3879 5931 6881 7980" > $llccbw/bw_hwmon/mbps_zones
-		echo 4 > $llccbw/bw_hwmon/sample_ms
-		echo 80 > $llccbw/bw_hwmon/io_percent
-		echo 20 > $llccbw/bw_hwmon/hist_memory
-		echo 10 > $llccbw/bw_hwmon/hyst_length
-		echo 30 > $llccbw/bw_hwmon/down_thres
-		echo 0 > $llccbw/bw_hwmon/guard_band_mbps
-		echo 250 > $llccbw/bw_hwmon/up_scale
-		echo 1600 > $llccbw/bw_hwmon/idle_mbps
-		echo 6881 > $llccbw/max_freq
-                echo 40 > $llccbw/polling_interval
-	    done
-
-	    for npubw in $device/*npu-npu-ddr-bw/devfreq/*npu-npu-ddr-bw
-	    do
-		echo 1 > /sys/devices/virtual/npu/msm_npu/pwr
-		echo "bw_hwmon" > $npubw/governor
-		echo "1720 2929 3879 5931 6881 7980" > $npubw/bw_hwmon/mbps_zones
-		echo 4 > $npubw/bw_hwmon/sample_ms
-		echo 80 > $npubw/bw_hwmon/io_percent
-		echo 20 > $npubw/bw_hwmon/hist_memory
-		echo 6  > $npubw/bw_hwmon/hyst_length
-		echo 30 > $npubw/bw_hwmon/down_thres
-		echo 0 > $npubw/bw_hwmon/guard_band_mbps
-		echo 250 > $npubw/bw_hwmon/up_scale
-		echo 0 > $npubw/bw_hwmon/idle_mbps
-                echo 40 > $npubw/polling_interval
-		echo 0 > /sys/devices/virtual/npu/msm_npu/pwr
-	    done
-	done
-
-    # memlat specific settings are moved to seperate file under
-    # device/target specific folder
-    setprop vendor.dcvs.prop 1
-
-    echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
     target_type=`getprop ro.hardware.type`
 	if [ -f /sys/devices/soc0/soc_id ]; then
                 soc_id=`cat /sys/devices/soc0/soc_id`

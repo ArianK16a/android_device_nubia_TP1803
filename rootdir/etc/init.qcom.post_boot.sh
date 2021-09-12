@@ -111,7 +111,3 @@ case "$target" in
 		echo 1 > /proc/sys/vm/reap_mem_on_sigkill
 	fi
 esac
-
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy

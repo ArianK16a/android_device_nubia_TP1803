@@ -116,13 +116,6 @@ on late-fs
     # Boot time fs tune
     write /sys/block/dm-7/queue/read_ahead_kb 2048
 
-on early-boot
-    start vendor.sensors
-
-on boot
-    start rmt_storage
-    start rfs_access
-
 on property:sys.boot_completed=1
     setprop vendor.setup.power 1
 

@@ -43,6 +43,12 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
+# ATFWD
+-system_ext/app/atfwd/atfwd.apk
+vendor/bin/ATFWD-daemon
+vendor/etc/seccomp_policy/atfwd@2.0.policy
+vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
+
 # Audio ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb

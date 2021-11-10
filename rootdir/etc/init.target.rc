@@ -227,3 +227,12 @@ service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@
     writepid /dev/cpuset/system-background/tasks
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+service vendor.mdm_helper /vendor/bin/mdm_helper
+    class core
+    group system wakelock
+    disabled
+
+service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
+    class main
+    oneshot

@@ -32,6 +32,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # The DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
+/dev/mhi_*_pipe_4         0660   system     system
 
 /dev/wlan                 0660   wifi       wifi
 /dev/kgsl-3d0             0666   system     system
@@ -58,6 +59,10 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/btpower              0660   bluetooth  system
 
 /dev/smdcntl8             0640   radio      radio
+/dev/mhi_*_pipe_14        0640   radio      radio
+/dev/mhi_*_pipe_16        0640   radio      radio
+/dev/mhi_*_pipe_32        0640   radio      radio
+/dev/at_usb0              0640   radio      radio
 /dev/at_mdm0              0640   radio      radio
 /dev/video*               0660   system     camera
 /dev/media*               0660   system     camera

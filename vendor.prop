@@ -57,14 +57,7 @@ vendor.qcom.bluetooth.soc=cherokee
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# Data modules
-persist.vendor.data.iwlan.enable=true
-persist.vendor.data.mode=concurrent
-ro.telephony.iwlan_operation_mode=legacy
-
 # DPM
-persist.vendor.dpm.feature=1
-persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Display

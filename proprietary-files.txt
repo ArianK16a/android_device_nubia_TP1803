@@ -332,7 +332,9 @@ vendor/firmware/a640_zap.mdt
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/slim_daemon
+vendor/bin/tloc_daemon
 vendor/bin/xtra-daemon
+vendor/etc/init/tloc_daemon.rc
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libcdfw_remote_api.so

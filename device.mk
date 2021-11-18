@@ -374,5 +374,17 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+# Vendor blobs
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0.vendor \
+    android.hardware.configstore@1.1.vendor \
+    android.hardware.contexthub@1.0.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.light@2.0.vendor \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # Call the proprietary setup
 $(call inherit-product, vendor/nubia/TP1803/TP1803-vendor.mk)

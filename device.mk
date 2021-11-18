@@ -141,10 +141,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# Fstab
-PRODUCT_PACKAGES += \
-    fstab.qcom
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
@@ -182,12 +178,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # Init scripts
-PRODUCT_PACKAGES += \
-    init.power.rc \
-    init.target.rc \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    init.qcom.sh
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/etc/,$(TARGET_COPY_OUT_VENDOR)/etc/init/hw) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/bin/,$(TARGET_COPY_OUT_VENDOR)/bin) \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -326,10 +321,6 @@ PRODUCT_COPY_FILES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
-
-# Uevent
-PRODUCT_PACKAGES += \
-    ueventd.qcom.rc
 
 # USB
 PRODUCT_PACKAGES += \

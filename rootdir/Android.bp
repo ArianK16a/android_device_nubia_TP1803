@@ -4,9 +4,3 @@ prebuilt_etc {
     vendor: true,
     sub_dir: "init/hw",
 }
-
-sh_binary {
-    name: "init.qcom.usb.sh",
-    src: "etc/init.qcom.usb.sh",
-    vendor: true,
-}

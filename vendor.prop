@@ -57,9 +57,6 @@ vendor.qcom.bluetooth.soc=cherokee
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# Data modules
-persist.vendor.data.mode=concurrent
-
 # DPM
 persist.vendor.dpmhalservice.enable=1
 

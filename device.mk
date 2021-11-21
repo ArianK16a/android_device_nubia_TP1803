@@ -242,7 +242,6 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \

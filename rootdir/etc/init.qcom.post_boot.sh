@@ -321,15 +321,6 @@ case "$target" in
             else
                 soc_id=`cat /sys/devices/system/soc/soc0/id`
             fi
-	if [ "$target_type" == "automotive" ]; then
-           # update frequencies
-	   if [ "$soc_id" == "340" ] | [ "$soc_id" == "405" ]; then #sa8195
-		configure_automotive_sku_parameters_sa8195
-	   else #sa8155
-		configure_automotive_sku_parameters
-	   fi
-	fi
-
     ;;
 esac
 

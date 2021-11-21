@@ -244,7 +244,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \

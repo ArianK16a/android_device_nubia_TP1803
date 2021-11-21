@@ -243,24 +243,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
-    init.crda.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
-    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
-    init.qcom.factory.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.sdio.sh \
     init.qcom.sh \
-    init.qcom.ssr.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.qti.dcvs.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    qca6234-service.sh \
     ueventd.qcom.rc
 
 # Sensors

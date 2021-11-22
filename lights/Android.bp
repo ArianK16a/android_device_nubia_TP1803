@@ -12,14 +12,18 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+//
 
 cc_binary {
-    relative_install_path: "hw",
-    defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.TP1803",
+    defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
     init_rc: ["android.hardware.light@2.0-service.TP1803.rc"],
     vintf_fragments: ["android.hardware.light@2.0-service.TP1803.xml"],
-    srcs: ["service.cpp", "Light.cpp"],
+    srcs: [
+        "service.cpp",
+        "Light.cpp",
+    ],
     vendor: true,
     shared_libs: [
         "libbase",
